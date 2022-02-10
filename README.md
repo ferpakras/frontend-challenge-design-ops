@@ -1,55 +1,85 @@
-# Frontend Challenge - Design Ops
+# Welcome to Frontend Design Ops!
 
-## Desafio
+Hey dev, how u doin'?
 
-Consiste em construir uma aplicação de notícias usando a API https://newsapi.org/ de forma whitelabel, usando o País como "tema". (Brasil, Portugal, Estados Unidos)
+Please check this react code and feel free to send me feedbacks about this ones.
 
-Seguindo o layout https://www.figma.com/file/CgTFC9deqfFX6vSf0JyDVp/GrupoBoticarioDesignOps?node-id=56%3A42184
+## How to run
 
-Ao criar uma conta no News API, você receberá um TOKEN, que será usado pra fazer as requisições a essa API
+Easy. Check it out:
 
-- [Criar conta](https://newsapi.org/register)
-- [News API - Endpoints](https://newsapi.org/docs/endpoints)
+1. First, **clone** this project
+2. Open the project folder on terminal
+3. And then run this complex command below:
 
-## Sobre
+```sh
+\$ yarn
+```
 
-Esse monorepo contem dois pacotes, o `design-system` e `news-app`
+Wait to complete, and run:
 
-#### `@design-ops/design-system`
+```sh
+\$ yarn run dev
+```
 
-Pacote simulando a geração de Design Tokens [Links](https://brasil.uxdesign.cc/o-que-s%C3%A3o-design-tokens-cd408431727d) Usando a ferramenta do [Style Dictionary](https://amzn.github.io/style-dictionary/#/) Que permite que seja definido os tokens das marcas em um único formato (JSON) para que seja distribuído em várias plataformas e formatos de arquivos (JS, CSS, SCSS, DART).
+WOW, the app is runnig.
 
-Nesse pacote vai encontrar a pasta `themes` que usamos para separar os tokens por tema. Aqui deve ser criado os temas que encontrará no Figma.
+Done! Just open this folder on your favorite editor and take a look or, try it on on your favorite browser.
 
-#### `@design-ops/news-app`
+## Getting Started
 
-Onde deverá ser desenvolvido a aplicação como no Layout. Já preparado com o Framework Next.js.
+### Dev Dependencies (recommended)
 
-## Tecnologias
+- Yarn - 1.19+ (<https://yarnpkg.com/>)
+- Node - 12 + (<https://nodejs.org/>)
 
-Algumas tecnologias que usamos aqui. Mas fique a vontade pra desenvolver com o que estiver mais familiarizado.
+### Libs, Frameworks & Tools
 
-- Git
-  - git-cz
-  - semantic commit
-- JS
-  - [Next](https://nextjs.org)
-  - [TurboRepo](https://turborepo.org/)
-  - [Stitches](https://stitches.dev)
-  - [radix-ui.com](https://radix-ui.com)
-  - [Style Dictionary](https://amzn.github.io/style-dictionary/#/)
-  - [SWR](https://swr.vercel.app/)
+- React and React DOM - 17+ (<https://reactjs.org/>)
+- Next - 10+ (<https://nextjs.org/>)
+- ManyPKG (<https://github.com/Thinkmill/manypkg>)
+- TurboRepo (<https://turborepo.org/>)
 
-## Comandos
+## Plugins on the road
 
-`yarn run bootstrap` Para preparar o projeto, instalar e fazer o link das dependências
+To support to build the app, I've used the follows:
 
-`yarn run dev` Para rodar a aplicação Next.js em `dev`
+| Plugin   | Package Name    |
+| -------- | --------------- |
+| axios    | axios           |
+| Stitches | @stitches/react |
 
-`yarn pkg <package-name> <command>` Rodar um comando em um pacote específico
+## Project Structure
 
-## Como entregar?
+Main folders: /design-system and /news-app
 
-Crie um novo fork e branch com seu nome-sobrenome e faça um pull request quando estiver pronto. Iremos fazer code review.
+As available on the original README file, I have just used the **/news-app** folder to create the design-system using Stitches. So, here we go:
 
-> 🎉 Se possível entregar uma URL em algum serviço de hospedagem (Vercel, Netlify)
+| Folder             | Purpose                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------- |
+| /pages             | where my pages (and routes) are. Responsible for populate the components.              |
+| /public            | responsible for store my public files, such as images, icons, documents, this kind of. |
+| /shared            | where my shared code for the entire application is.                                    |
+| /shared/components | where are the app components.                                                          |
+| /shared/constants  | where are my constants values, such as translation, for example.                       |
+| /shared/helpers    | where are helpers to suport the entire code.                                           |
+| /shared/hooks      | where are my custom hooks                                                              |
+| /shared/services   | where are my APIs configuration                                                        |
+| /shared/store      | where are my context API configuration                                                 |
+
+And a important file here: **/news-app/stitches.config.js** where are all the design systems configuration, themes, utils and more. Base to compound the entire components and pages.
+
+## Improvements
+
+Check below some code improvements that should be done soon:
+
+. Accessibility
+. Unit Tests
+. Loading and errors treatments for API response
+. Configure the API response to save data into context API to avoid many requests
+
+And I guess that is all. I really appreciate the opportunity and I'm glad to be part of this challenge. I learned to many things in the last couple of days. That was my first time using Stitches and I really will continue studying this lib.
+
+So thank very much, you and If you have any suggestions, questions, doubts, please do not hesitate to contact me.
+
+Cheers!
