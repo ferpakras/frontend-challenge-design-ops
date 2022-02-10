@@ -73,10 +73,10 @@ And a important file here: **/news-app/stitches.config.js** where are all the de
 
 Check below some code improvements that should be done soon:
 
-. Accessibility
-. Unit Tests
-. Loading and errors treatments for API response
-. Configure the API response to save data into context API to avoid many requests
+- Accessibility
+- Unit Tests
+- Loading and errors treatments for API response
+- Configure the API response to save data into context API to avoid many requests
 
 And I guess that is all. I really appreciate the opportunity and I'm glad to be part of this challenge. I learned to many things in the last couple of days. That was my first time using Stitches and I really will continue studying this lib.
 
